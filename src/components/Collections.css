@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+.heading_div{
+    width: 100%;
+    height:calc(60rem - 10vw) ;
+    overflow: hidden;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: black;
+    text-align: center;
+}
+.heading_div #heading_image{
+    width: 100%;
+    margin-top: calc(-2rem + 1rem) ; 
+    
+    opacity: 0.7;
+}
+
+.heading_div #headin_name{
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    opacity: 1;
+    margin-left: 45%;
+    margin-top: 18rem;
+    z-index: 2;
+
+}
+
+.items {
+    width: -20vw;
+    background-color: black;
+    text-decoration: none;
+}
+
+.items img{
+  height: 40rem;
+  opacity: .6;
+  
+}
+
+.items span{
+    position: absolute;
+    color: black;
+    background-color: white;
+    font-size: 2rem;
+    margin-left: 7vw;
+    margin-top: 9vw;
+    z-index: 2;
+
+}
+
+.items_div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.items_div .product_item{
+    width: 20vw;
+    margin: 0 auto;
+    padding-top: 4rem;
+    
+}
+.product_item img{
+    width: 100%;
+}
+
+
+@media screen and (max-width:1059px) and (min-width:1600px) {
+    .heading_div #heading_image{
+        width: 100%;
+        margin-top: calc(-2rem + 1rem) ; 
+    }
+   
+}
+
+@media screen and (max-width:1059px) {
+    .heading_div{
+        width: 100%;
+        height: auto;
+    }
+    .heading_div #heading_image{
+        width: 100%;
+        height: auto; 
+    }
+    .items_div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin-top: 8rem;
+    }
+    .items_div .product_item{
+        width: 30vw;
+        margin: 0 auto;
+        padding-top: 4rem;
+        
+    }
+}
+
+@media screen and (max-width:771px) {
+    .heading_div{
+        width: 100%;
+        height: 70vw;
+        margin-top: 0rem;
+    }
+    .heading_div #heading_image{
+        width: 100%;
+        height: 100%; 
+    }
+
+    .items_div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-top: 8rem;
+    }
+    .items_div .product_item{
+        width: 40vw;
+        margin: 0 auto;
+        padding-top: 4rem;
+        
+    }
+    
+}
+
